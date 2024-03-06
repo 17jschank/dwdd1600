@@ -1,0 +1,133 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    background-color: #ececec;
+}
+
+/* Header */
+header {
+    background-color: #046b9f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: 1rem 2vw;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+header p {
+    margin: 0;
+    color: white;
+    letter-spacing: 0.05px;
+}
+
+/* Navigation */
+nav {
+    background-color: #d0d0d0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #046b9f;
+    display: block;
+    padding: 0.83rem 2rem;
+}
+
+nav li.active a {
+    background-color: #ececec;
+    color: #046b9f;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #012b45;
+}
+
+/* Main */
+main {
+    padding: 1rem 2vw;
+}
+
+main h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #012b45;
+}
+
+main h2 {
+    margin: 3rem 0 .2rem 0;
+}
+
+main ol {
+    padding: .5rem 3vw;
+    background-color: #d0d0d0;
+}
+
+main dl dt {
+    color: #012b45;
+    font-weight: 700;
+}
+
+main dl dd {
+    font-size: .9rem;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address{
+    font-style: normal;
+    background-color: #d0d0d0;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #b9b9b9;
+    border-radius: .5rem;
+}
+
+main address a {
+    color: #012b45;
+}
+
+main a {
+    color: #046b9f;
+}
+
+main a:hover {
+    color: #ffcc33;
+}
+
+/* Footer */
+footer {
+    background-color: #012b45;
+    color: #ececec;
+    padding: 1rem 2vw;
+    font-size: .8rem;
+}
+
+footer a {
+    color: #ececec;
+}
+
+footer a:hover {
+    color: #529dcb;
+}
