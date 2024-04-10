@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Level One Legends: Home</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jacob Schank">
+    <meta name="description" content="Learn the basics of how to play Dungeons and Dragons">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="legends.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Start of the page header -->
+    <header>
+        <h1 id="top">Level One Legends</h1>
+        <p>Dungeons and Dragons for beginners</p>
+    </header>
+
+    <!-- Start of the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About D&D</a></li>
+            <li><a href="characters.html">Character Sheet Tour</a></li>
+            <li><a href="gallery.html">Image Gallery</a></li>
+            <li class="active"><a href="survey.html">Survey</a></li>
+        </ul>
+    </nav>
+
+    <!-- Start of the page content -->
+    <main>
+        <h1>Survey</h1>
+        
+        <form method="get" class="surveyForm" action="thanks.html">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>Name* <input type="text" name="name" required></label>
+                <label>Phone Number* <input type="tel" name="phone" required placeholder="123-456-7890"></label>
+                <label>Email* <input type="text" name="email" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>How were you first introduced to D&D?</legend>
+                <label><input type="radio" name="intro" value="friend">A Friend</label>
+                <label><input type="radio" name="intro" value="social">Social Media</label>
+                <label><input type="radio" name="intro" value="dndbeyond">D&D Beyond Official Website</label>
+                <label><input type="radio" name="intro" value="gamestore">A Game Store</label>
+                <label><input type="radio" name="intro" value="other">Other</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Why are you interested in learning how to play D&D?</legend>
+                <label><input type="checkbox" name="group" value="true"> I've joined a group that plays</label>
+                <label><input type="checkbox" name="fun" value="true"> It seems fun!</label>
+                <label><input type="checkbox" name="rules" value="true"> I want to know the rules better</label>
+                <label><input type="checkbox" name="curious" value="true"> I'm just curious</label>
+                <label>What do you hope to learn most?
+                    <select name="learn">
+                        <option value="none">Please Select</option>
+                        <option value="basics">Basics of the game</option>
+                        <option value="sheet">How a character sheet is organized</option>
+                        <option value="dice">How the dice are used</option>
+                        <option value="dming">How to DM</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <label>Questions and Feedback
+                <textarea name="feedback"></textarea>
+            </label>
+
+            <input type="submit" value="Submit Form">
+        </form>
+
+    </main>
+
+    <!-- Start of the page footer -->
+    <footer>
+        <p>&copy; 2023 &bull; Jacob Schank &bull; <a href="mailto:17jschank@gmail.com">Email Us</a></p>
+    </footer>
+</body>
+</html>
