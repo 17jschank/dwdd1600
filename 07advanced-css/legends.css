@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    background-color: #ececec;
+}
+
+
+
+/* Header */
+header {
+    background-color: #046b9f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: center;
+}
+
+header div {
+    padding-left: 2vw;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+header p {
+    margin: 0;
+    color: white;
+    letter-spacing: 0.05px;
+}
+
+
+
+/* Navigation */
+nav {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Small screen */
+@media only screen and (max-width: 600px) {
+
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    
+    nav a {
+        display: block;
+        padding: .8rem;
+        font-size: 1.1rem;
+        text-decoration: none;
+        text-align: center;
+        border-bottom: solid 1px #bbbbbb;
+        color: #012b45;
+    }
+
+    nav li.active a {
+        background-color: #529dcb;
+        color: #012b45;
+        font-weight: 600;
+    }
+
+    nav a:hover {
+        color: #04608f;
+    }
+
+}
+
+/* Large screen */
+@media only screen and (min-width: 601px) {
+
+    nav {
+        background-color: #d0d0d0;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: flex;
+    }
+    
+    nav a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: #012b45;
+        display: block;
+        padding: 0.83rem 2rem;
+    }
+    
+    nav li.active a {
+        background-color: #ececec;
+        color: #046b9f;
+        font-weight: 600;
+    }
+    
+    nav a:hover {
+        color: #04608f;
+    }
+    
+}
+
+
+
+
+
+/* Main */
+main {
+    padding: 1rem 2vw;
+}
+
+main h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #012b45;
+}
+
+main h2 {
+    margin: 3rem 0 .2rem 0;
+}
+
+main ol {
+    padding: .5rem 3vw;
+    background-color: #d0d0d0;
+}
+
+main dl dt {
+    color: #012b45;
+    font-weight: 700;
+}
+
+main dl dd {
+    font-size: .9rem;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address{
+    font-style: normal;
+    background-color: #d0d0d0;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #b9b9b9;
+    border-radius: .5rem;
+}
+
+main address a {
+    color: #012b45;
+}
+
+main a {
+    color: #046b9f;
+}
+
+main a:hover {
+    color: #ffcc33;
+}
+
+.mainhero {
+    width: 100%;
+    margin: 0;
+}
+
+.mainhero img {
+    width: 100%;
+    height: auto;
+}
+
+figure.home {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+figure.home img {
+    width: 100%;
+    height: auto;
+}
+
+figure.home figcaption {
+    text-align: center;
+    font-size: .8rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #012b45;
+}
+
+div.gallery img:hover {
+    box-shadow: 0 0 10px rgba(4, 107, 159, .4);
+}
+
+
+
+/* Survey */
+.surveyForm fieldset {
+    border: 1.5px solid #046b9f;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.surveyForm legend {
+    background-color: #046b9f;
+    color: white;
+    padding: .5rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+}
+
+.surveyForm label {
+    margin: .5rem;
+}
+
+.surveyForm label, .surveyForm select, .surveyForm [type=text], .surveyForm [type=tel], .surveyForm textarea {
+    display: block;
+}
+
+.surveyForm select, .surveyForm [type=text], .surveyForm [type=tel], .surveyForm textarea {
+    border: solid 1px #046b9f;
+    border-radius: 4px;
+    padding: .3rem;
+    width: 200px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+.surveyForm textarea {
+    width: 24rem;
+    height: 6rem;
+}
+
+.surveyForm :required {
+    background-color: rgba(4, 107, 159, .2);
+}
+
+.surveyForm [type=submit] {
+    background-color: #529dcb;
+    border: outset 1px #046b9f;
+    border-radius: 16px;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0 0 1vw;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+.surveyForm [type=submit]:active {
+    background-color: #4a8db7;
+    border: inset 1px #04608f;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #012b45;
+    color: #ececec;
+    padding: 1rem 2vw;
+    font-size: .8rem;
+    background-image: linear-gradient(to bottom, #012b45, #03567f);
+}
+
+footer a {
+    color: #ececec;
+}
+
+footer a:hover {
+    color: #529dcb;
+}
+
+
+
+header, nav, main, footer {
+    max-width: 66rem;
+    margin: 0 auto;
+}
