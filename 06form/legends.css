@@ -174,11 +174,11 @@ div.gallery figcaption {
     margin: .5rem;
 }
 
-.surveyForm label, .surveyForm select, .surveyForm [type=text], .surveyForm [type=tel], .surveyForm textarea {
+.surveyForm label, .surveyForm select, .surveyForm [type=text], .surveyForm [type=tel], .surveyForm [type=email], .surveyForm textarea {
     display: block;
 }
 
-.surveyForm select, .surveyForm [type=text], .surveyForm [type=tel], .surveyForm textarea {
+.surveyForm select, .surveyForm [type=text], .surveyForm [type=tel], .surveyForm [type=email], .surveyForm textarea {
     border: solid 1px #046b9f;
     border-radius: 4px;
     padding: .3rem;
